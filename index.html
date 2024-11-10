@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamc Resume builder </h1>
+    
+    <!-- Form to capture user input -->
+    <form id="resumeForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="education">Education:</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="work">Work Experience:</label>
+        <input type="text" id="work" name="work" required>
+
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Container to display generated resume -->
+    <div id="resumeContainer" style="display:none;">
+        <h2>Generated Resume</h2>
+        <h3 id="resumeName"></h3>
+        <p id="resumeEmail"></p>
+        <p id="resumePhone"></p>
+        <h4>Education</h4>
+        <p id="resumeEducation"></p>
+        <h4>Work Experience</h4>
+        <p id="resumeWork"></p>
+        <h4>Skills</h4>
+        <p id="resumeSkills"></p>
+        
+    </div>
+    <h2 style="text-align: center;">Made by Shahbaz</h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
